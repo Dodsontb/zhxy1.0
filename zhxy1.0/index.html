@@ -1,11 +1,565 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-	</head>
-	<body>
-		sa'sa
-		hahshhah 
-	</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+        <meta name="author" content="SuggeElson" />
+        <meta name="description" content=""
+        />
+        <meta name="keywords" content=""
+        />
+        <meta name="application-name" content="sprFlat admin template" />
+        <!-- Import google fonts - Heading first/ text second -->
+        <link rel='stylesheet' type='text/css' 
+        <!--[if lt IE 9]>
+
+<![endif]-->
+        <!-- Css files -->
+        <!-- Icons -->
+        <link href="assets/css/icons.css" rel="stylesheet" />
+        <!-- jQueryUI -->
+        <link href="assets/css/sprflat-theme/jquery.ui.all.css" rel="stylesheet" />
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="assets/css/plugins.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="assets/css/main.css" rel="stylesheet" />
+        <!-- Custom stylesheets ( Put your own changes here ) -->
+        <link href="assets/css/custom.css" rel="stylesheet" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/img/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="icon" href="assets/img/ico/favicon.ico" type="image/png">
+        <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
+        <meta name="msapplication-TileColor" content="#3399cc" />
+    </head>
+    <body>
+        <!-- Start #header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">
+                            <i class="im-windows8 text-logo-element animated bounceIn"></i><span class="text-logo">智慧</span><span class="text-slogan">校园</span> 
+                        </a>
+                    </div>
+                    <nav class="top-nav" role="navigation">
+                        <ul class="nav navbar-nav pull-left">
+                            <li id="toggle-sidebar-li">
+                                <a href="#" id="toggle-sidebar"><i class="en-arrow-left2"></i>
+                        </a>
+                            </li>
+                            <li>
+                                <a href="#" class="full-screen"><i class="fa-fullscreen"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown"><i class="ec-cog"></i><span class="notification">10</span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><i class="st-users"></i> 个人设置</a>
+                                    </li>
+                                    <li><a href="#"><i class="st-folder"></i> 通用</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown"><i class="ec-mail"></i><span class="notification">4</span></a>
+                                <ul class="dropdown-menu email" role="menu">
+                                    <li class="mail-head">
+                                        <div class="clearfix">
+                                            <div class="pull-left">
+                                                <a href="email-inbox.html"><i class="ec-archive"></i></a>
+                                            </div>
+                                            <span>消息</span> 
+                                            <div class="pull-right">
+                                                <a href="email-inbox.html"><i class="st-pencil"></i></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="search-email">
+                                        <form>
+                                            <input type="text" name="search" placeholder="搜索">
+                                            <button type="submit"><i class="ec-search"></i>
+                                            </button>
+                                        </form>
+                                    </li>
+                                    <li class="mail-list clearfix">
+                                        <a href="#">
+                                            <img src="assets/img/avatars/128.jpg" class="mail-avatar pull-left" alt="avatar">
+                                            <p class="name">
+                                                <span class="status"><i class="en-dot"></i></span> 何新可
+                                                <span class="notification">2</span>
+                                                <span class="time">2018-01-01-20:20</span>
+                                            </p>
+                                            <p class="msg">
+                                               你快点把首页做完
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="mail-list clearfix">
+                                        <a href="#">
+                                            <img src="assets/img/avatars/129.jpg" class="mail-avatar pull-left" alt="avatar">
+                                            <p class="name">
+                                                <span class="status off"><i class="en-dot"></i></span>谭傲
+                                                <span class="notification">6</span>
+                                                <span class="time">10:26 am</span>
+                                            </p>
+                                            <p class="msg">
+                                               数据库给我我开始功能了
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="mail-list clearfix">
+                                        <a href="#">
+                                            <img src="assets/img/avatars/130.jpg" class="mail-avatar pull-left" alt="avatar">
+                                            <p class="name">
+                                                <span class="status off"><i class="en-dot"></i></span>苏寻
+                                                <span class="notification">1</span>
+                                                <span class="time">7:15 am</span>
+                                            </p>
+                                            <p class="msg">
+                                                多劳哦
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="mail-list clearfix">
+                                        <a href="#">
+                                            <img src="assets/img/avatars/131.jpg" class="mail-avatar pull-left" alt="avatar">
+                                            <p class="name">
+                                                <span class="status"><i class="en-dot"></i></span> 李佳熊
+                                                <span class="notification">5</span>
+                                                <span class="time">03:46 am</span>
+                                            </p>
+                                            <p class="msg">
+                                               吃鸡不兄嘚
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="mail-more">
+                                        <a href="email-inbox.html">查看全部<i class="en-arrow-right7"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown">
+                                    <img class="user-avatar" src="assets/img/avatars/48.jpg" alt="SuggeElson">陈鹏</a>
+                                <ul class="dropdown-menu right" role="menu">
+                                    <li><a href="#"><i class="st-cloud"></i> 题库</a>
+                                    </li>
+                                    <li><a href="#"><i class="im-exit"></i> 退出</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="toggle-right-sidebar-li"><a href="#" id="toggle-right-sidebar"><i class="ec-users"></i> <span class="notification">3</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Start #header-area -->
+                <div id="header-area" class="fadeInDown">
+                    <div class="header-area-inner">
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="im-pie"></i>
+                                        <span>Earning Stats</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="ec-images color-dark"></i>
+                                        <span>Gallery</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="en-light-bulb color-orange"></i>
+                                        <span>Fresh ideas</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="ec-link color-blue"></i>
+                                        <span>Links</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="ec-support color-red"></i>
+                                        <span>Support</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="shortcut-button">
+                                    <a href="#">
+                                        <i class="st-lock color-teal"></i>
+                                        <span>Lock area</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End #header-area -->
+            </div>
+            <!-- Start .header-inner -->
+        </div>
+        <!-- End #header -->
+        <!-- Start #sidebar -->
+        <div id="sidebar">
+            <!-- Start .sidebar-inner -->
+            <div class="sidebar-inner">
+                <!-- Start #sideNav -->
+                <ul id="sideNav" class="nav nav-pills nav-stacked">
+                    <li class="top-search">
+                        <form>
+                            <input type="text" name="search" placeholder="Search ...">
+                            <button type="submit"><i class="ec-search s20"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li><a href="index.html">首页<i class="im-screen"></i></a>
+                    </li>
+                    <li><a href="charts.html">数据统计<i class="st-chart"></i></a>
+                    </li>
+                    <!--班级管理-->
+                    <li><a href="#"> 班级管理 <i class="im-table2"></i></a>
+                        <ul class="nav sub">
+                            <li><a href="tables.html"><i class="en-arrow-right7"></i> 查看班级</a>
+                            </li>
+                            <li><a href="data-tables.html"><i class="en-arrow-right7"></i> 新增班级</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">考勤 <i class="st-lab"></i></a>
+                        <ul class="nav sub">
+                            <li><a href="notifications.html"><i class="fa-bell"></i> 班级考勤</a>
+                            </li>
+                            <li><a href="panels.html"><i class="br-window"></i> 教员考勤</a>
+                            </li>
+                            <li><a href="tiles.html"><i class="im-windows8"></i> 校工考勤</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- End .sidebar-inner -->
+        </div>
+        <!-- End #sidebar -->
+        <!-- Start #right-sidebar -->
+        <div id="right-sidebar" class="hide-sidebar">
+            <!-- Start .sidebar-inner -->
+            <div class="sidebar-inner">
+                <div class="sidebar-panel mt0">
+                    <div class="sidebar-panel-content fullwidth pt0">
+                        <div class="chat-user-list">
+                            <form class="form-horizontal chat-search" role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="搜索">
+                                    <button type="submit"><i class="ec-search s16"></i>
+                                    </button>
+                                </div>
+                                <!-- End .form-group  -->
+                            </form>
+                            <ul class="chat-ui bsAccordion">
+                                <li>
+                                    <a href="#">同学<span class="notification teal">4</span><i class="en-arrow-down5"></i></a>
+                                    <ul class="in">
+                                        <li>
+                                            <a href="#" class="chat-name">
+                                                <img class="chat-avatar" src="assets/img/avatars/49.jpg" alt="@chadengle">陈智魏
+                                                <span class="has-message"><i class="im-pencil"></i></span>
+                                            </a>
+                                            <span class="status online"><i class="en-dot"></i></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">老师 <span class="notification green">3</span><i class="en-arrow-down5"></i></a>
+                                    <ul class="in">
+                                        <li>
+                                            <a href="#" class="chat-name">
+                                                <img class="chat-avatar" src="assets/img/avatars/51.jpg" alt="@kolage">唐勇</a>
+                                            <span class="status online"><i class="en-dot"></i></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">家长 <span class="notification red">5</span><i class="en-arrow-down5"></i></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="chat-name">
+                                                <img class="chat-avatar" src="assets/img/avatars/56.jpg" alt="@laurengray">陈晨橙</a>
+                                            <span class="status offline"><i class="en-dot"></i></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chat-box">
+                            <h5>Chad Engle</h5>
+                            <a id="close-user-chat" href="#" class="btn btn-xs btn-primary"><i class="en-arrow-left4"></i></a>
+                            <ul class="chat-ui chat-messages">
+                                <li class="chat-user">
+                                    <p class="avatar">
+                                        <img src="assets/img/avatars/49.jpg" alt="@chadengle">
+                                    </p>
+                                    <p class="chat-name">Chad Engle <span class="chat-time">15 seconds ago</span>
+                                    </p>
+                                    <span class="status online"><i class="en-dot"></i></span>
+                                    <p class="chat-txt">Hello Sugge check out the last order.</p>
+                                </li>
+                                <li class="chat-me">
+                                    <p class="avatar">
+                                        <img src="assets/img/avatars/48.jpg" alt="SuggeElson">
+                                    </p>
+                                    <p class="chat-name">SuggeElson <span class="chat-time">10 seconds ago</span>
+                                    </p>
+                                    <span class="status online"><i class="en-dot"></i></span>
+                                    <p class="chat-txt">Ok i will check it out.</p>
+                                </li>
+                                <li class="chat-user">
+                                    <p class="avatar">
+                                        <img src="assets/img/avatars/49.jpg" alt="@chadengle">
+                                    </p>
+                                    <p class="chat-name">Chad Engle <span class="chat-time">now</span>
+                                    </p>
+                                    <span class="status online"><i class="en-dot"></i></span>
+                                    <p class="chat-txt">Thank you, have a nice day</p>
+                                </li>
+                            </ul>
+                            <div class="chat-write">
+                                <form action="#" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <textarea name="sendmsg" id="sendMsg" class="form-control elastic" rows="1"></textarea>
+                                        <a role="button" class="btn" id="attach_photo_btn">
+                                            <i class="fa-picture s20"></i> 
+                                        </a>
+                                        <input type="file" name="attach_photo" id="attach_photo">
+                                    </div>
+                                    <!-- End .form-group  -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End .sidebar-inner -->
+        </div>
+        <!-- End #right-sidebar -->
+        <!-- Start #content -->
+        <div id="content">
+            <!-- Start .content-wrapper -->
+            <div class="content-wrapper">
+                <div class="row">
+                    <!-- Start .row -->
+                    <!-- Start .page-header -->
+                    <div class="col-lg-12 heading">
+                        <h1 class="page-header"><i class="im-screen"></i> 首页</h1>
+                        <!-- Start .bredcrumb -->
+                        <ul id="crumb" class="breadcrumb">
+                        </ul>
+                        <div class="option-buttons">
+                            <div class="btn-toolbar" role="toolbar">
+                                <div class="btn-group">
+                                    <a id="clear-localstorage" class="btn tip" title="Reset panels position">
+                                        <i class="ec-refresh color-red s24"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--主体部分-->
+                <div class="outlet">
+                    <div class="row">
+                        <!-- Start .row -->
+                        <div class="col-lg-6 col-md-6 sortable-layout">
+                            <!-- Start col-lg-6 -->
+                            <div class="panel panel-teal toggle panelMove panelClose panelRefresh">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="im-bars"></i>考试统计</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="stats-pageviews" style="width: 100%; height:250px;"></div>
+                                </div>
+                                <div class="panel-footer teal-bg">
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                        <div class="tile teal m0">
+                                            <div class="tile-content text-center pl0 pr0">
+                                                <div id="countToday" class="number">65</div>
+                                                <h3>最低</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                        <div class="tile teal m0">
+                                            <div class="tile-content text-center pl0 pr0">
+                                                <div id="countYesterday" class="number">80</div>
+                                                <h3>最高</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                        <div class="tile teal m0">
+                                            <div class="tile-content text-center pl0 pr0">
+                                                <div id="countWeek" class="number">10</div>
+                                                <h3>考试次数</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                        <div class="tile teal m0">
+                                            <div class="tile-content text-center pl0 pr0">
+                                                <div id="countTotal" class="number">88</div>
+                                                <h3>平均</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--功能模块-->
+                            <!--<div class="panel panel-default panelMove plain">
+                                <div class="panel-heading white-bg"></div>
+                                <div class="panel-body p0">
+                                    <div id="calendar"></div>
+                                </div>
+                            </div>-->
+                        </div>
+                        <!-- End col-lg-6 -->
+                        <div class="col-lg-6 col-md-6 sortable-layout">
+                            <!-- Start col-lg-6 -->
+                            <div class="panel panel-default toggle panelMove panelClose panelRefresh">
+                                <!-- Start .panel -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="fa-list"></i> 任务</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="todo-widget">
+                                        <div class="todo-header">
+                                            <div class="todo-search">
+                                                <form>
+                                                    <input type="text" class="form-control" name="search" placeholder="搜索">
+                                                </form>
+                                            </div>
+                                            <div class="todo-add">
+                                                <a href="#" class="btn btn-primary tip" title="Add new todo"><i class="im-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <h4 class="todo-period">已完成任务</h4>
+                                        <ul class="todo-list" id="today">
+                                            <li class="todo-task-item">
+                                            	 <div class="todo-priority tip" title="Low priority">
+                                                    <i class="im-radio-checked"></i>
+                                                </div>
+                                                <div class="todo-task-text">第一次</div>
+                                                <button type="button" class="close todo-close">&times;</button>
+                                            </li>
+                                            <li class="todo-task-item">
+                                            	 <div class="todo-priority tip" title="Low priority">
+                                                    <i class="im-radio-checked"></i>
+                                                </div>
+                                                <div class="todo-task-text">第二次</div>
+                                                <button type="button" class="close todo-close">&times;</button>
+                                            </li>
+                                        </ul>
+                                        <h4 class="todo-period">未完成任务</h4>
+                                        <ul class="todo-list" id="tomorrow">
+                                            <li class="todo-task-item">
+                                                <div class="todo-priority tip" title="Low priority">
+                                                    <i class="im-radio-checked"></i>
+                                                </div>
+                                                <div class="todo-task-text">第三章测试</div>
+                                                <button type="button" class="close todo-close">&times;</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End .panel -->
+                        </div>
+                        <!-- End col-lg-6 -->
+                    </div>
+                    <!-- End .row -->
+                    <!-- Page End here -->
+                </div>
+                <!-- End .outlet -->
+            </div>
+            <!-- End .content-wrapper -->
+            <div class="clearfix"></div>
+        </div>
+        <!-- End #content -->
+        <!-- Javascripts -->
+        <!-- Load pace first -->
+        <script src="assets/plugins/core/pace/pace.min.js"></script>
+        <!-- Important javascript libs(put in all pages) -->
+        <script src="assets/js/jquery-1.8.3.min.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="assets/js/libs/jquery-2.1.1.min.js">\x3C/script>')
+        </script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="assets/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+        </script>
+        <!--[if lt IE 9]>
+  <script type="text/javascript" src="assets/js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script type="text/javascript" src="assets/js/libs/respond.min.js"></script>
+<![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="assets/js/bootstrap/bootstrap.js"></script>
+        <!-- Core plugins ( not remove ever) -->
+        <!-- Handle responsive view functions -->
+        <script src="assets/js/jRespond.min.js"></script>
+        <!-- Custom scroll for sidebars,tables and etc. -->
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+        <!-- Resize text area in most pages -->
+        <script src="assets/plugins/forms/autosize/jquery.autosize.js"></script>
+        <!-- Proivde quick search for many widgets -->
+        <script src="assets/plugins/core/quicksearch/jquery.quicksearch.js"></script>
+        <!-- Bootbox confirm dialog for reset postion on panels -->
+        <script src="assets/plugins/ui/bootbox/bootbox.js"></script>
+        <!-- Other plugins ( load only nessesary plugins for every page) -->
+        <script src="assets/plugins/charts/flot/jquery.flot.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.pie.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.resize.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.time.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.growraf.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.categories.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.stack.js"></script>
+        <script src="assets/plugins/charts/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/plugins/charts/flot/date.js"></script>
+        <script src="assets/plugins/charts/sparklines/jquery.sparkline.js"></script>
+        <script src="assets/plugins/charts/pie-chart/jquery.easy-pie-chart.js"></script>
+        <script src="assets/plugins/forms/icheck/jquery.icheck.js"></script>
+        <script src="assets/plugins/forms/tags/jquery.tagsinput.min.js"></script>
+        <script src="assets/plugins/forms/tinymce/tinymce.min.js"></script>
+        <script src="assets/plugins/misc/highlight/highlight.pack.js"></script>
+        <script src="assets/plugins/misc/countTo/jquery.countTo.js"></script>
+        <script src="assets/plugins/ui/weather/skyicons.js"></script>
+        <script src="assets/plugins/ui/notify/jquery.gritter.js"></script>
+        <script src="assets/plugins/ui/calendar/fullcalendar.js"></script>
+        <script src="assets/js/jquery.sprFlat.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/pages/dashboard.js"></script>
+    </body>
 </html>

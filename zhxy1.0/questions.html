@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>首页</title>
+        <title>新增题目</title>
         <!-- Mobile specific metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Force IE9 to render in normal mode -->
@@ -238,16 +238,7 @@
                     </li>
                     <li><a href="index.html">首页<i class="im-screen"></i></a>
                     </li>
-                    <li><a href="#">数据统计<i class="st-chart"></i></a>
-                    </li>
-                    <li>
-											<a href="#">课表 <i class="fa-leaf"></i></a>
-											<ul class="nav sub">
-												<li><a href="charts.html"><i class="im-paragraph-justify"></i> 查看 课表</a>
-												</li>
-												<li><a href="autoPlan.html"><i class="ec-pencil2"></i> 自动 排课</a>
-												</li>
-											</ul>
+                    <li><a href="charts.html">数据统计<i class="st-chart"></i></a>
                     </li>
                     <!--班级管理-->
                     <li><a href="#"> 班级管理 <i class="im-table2"></i></a>
@@ -382,7 +373,7 @@
                     <!-- Start .row -->
                     <!-- Start .page-header -->
                     <div class="col-lg-12 heading">
-                        <h1 class="page-header"><i class="im-screen"></i> 首页</h1>
+                        <h1 class="page-header"><i class="im-screen"></i> 题库</h1>
                         <!-- Start .bredcrumb -->
                         <ul id="crumb" class="breadcrumb">
                         </ul>
@@ -397,118 +388,163 @@
                         </div>
                     </div>
                 </div>
+                
                 <!--主体部分-->
-                <div class="outlet">
-                    <div class="row">
-                        <!-- Start .row -->
-                        <div class="col-lg-6 col-md-6 sortable-layout">
-                            <!-- Start col-lg-6 -->
-                            <div class="panel panel-teal toggle panelMove panelClose panelRefresh">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="im-bars"></i>考试统计</h4>
+                <div class="col-lg-12">
+                	<!--<div class="form-group">
+		                <label class="col-lg-2 col-md-2 col-sm-12 control-label">选择年级</label>
+		                <div class="col-lg-10 col-md-10">
+		                    <div class="row">
+		                        <div class="col-lg-6 col-md-6">
+					            	<select class="form-control">
+					                        <option value="AK">java20</option>
+					                        <option value="HI">C#20</option>
+					                        <option value="VT">C#21</option>
+					                        <option value="VA">java21</option>
+					                        <option value="WV">java22</option>
+					                    </optgroup>
+					                </select>
+					            </div>  
+					        </div>
+					    </div>
+					</div> -->
+                	<!--选择题-->
+                    <div class="panel panel-default toggle">
+                        <!-- Start .panel -->
+                        <div class="panel-heading">
+                            <h3 class="panel-title">选择题</h3>
+                        </div>
+                        <div class="panel-body">
+                        	<div class="panel panel-default toggle">
+                                <!-- Start .panel --> 
+                                <div class="panel-heading" style="background-color: #0088CC;">
+                                    <h3 class="panel-title" style="color: white;">题目1</h3>
                                 </div>
                                 <div class="panel-body">
-                                    <div id="stats-pageviews" style="width: 100%; height:250px;"></div>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label">题目</label>
+                                            <div class="col-lg-10 col-md-10">
+                                                <input class="form-control" id="mask-phone" type="text">
+                                                <span class="help-block">请输入题目内容</span>
+                                            </div>
+                                        </div>
+                                        <!-- End .form-group  -->
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label"><input type="checkbox"></label>
+                                            <div class="col-lg-10 col-md-10">
+                                                <input class="form-control" id="mask-phoneExt" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label"><input type="checkbox"></label>
+                                            <div class="col-lg-10 col-md-10">
+                                                <input class="form-control" id="mask-phoneExt" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label"><input type="checkbox"></label>
+                                            <div class="col-lg-10 col-md-10">
+                                                <input class="form-control" id="mask-phoneExt" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label"><input type="checkbox"></label>
+                                            <div class="col-lg-10 col-md-10">
+                                                <input class="form-control" id="mask-phoneExt" type="text">
+                                            </div>
+                                        </div>
+                                         <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label"></label>
+                                            <div class="col-lg-10 col-md-10 text-center">
+                                                <a href="#" class="btn btn-primary tip" title="添加选项"><i class="im-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="panel-footer teal-bg">
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <div class="tile teal m0">
-                                            <div class="tile-content text-center pl0 pr0">
-                                                <div id="countToday" class="number">65</div>
-                                                <h3>最低</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <div class="tile teal m0">
-                                            <div class="tile-content text-center pl0 pr0">
-                                                <div id="countYesterday" class="number">80</div>
-                                                <h3>最高</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <div class="tile teal m0">
-                                            <div class="tile-content text-center pl0 pr0">
-                                                <div id="countWeek" class="number">10</div>
-                                                <h3>考试次数</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <div class="tile teal m0">
-                                            <div class="tile-content text-center pl0 pr0">
-                                                <div id="countTotal" class="number">88</div>
-                                                <h3>平均</h3>
-                                            </div>
-                                        </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label"></label>
+                                    <div class="col-lg-10 col-md-10 text-center">
+                                        <a href="#" class="btn btn-primary tip" title="添加题目"><i class="im-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <!--功能模块-->
-                            <!--<div class="panel panel-default panelMove plain">
-                                <div class="panel-heading white-bg"></div>
-                                <div class="panel-body p0">
-                                    <div id="calendar"></div>
-                                </div>
-                            </div>-->
                         </div>
-                        <!-- End col-lg-6 -->
-                        <div class="col-lg-6 col-md-6 sortable-layout">
-                            <!-- Start col-lg-6 -->
-                            <div class="panel panel-default toggle panelMove panelClose panelRefresh">
-                                <!-- Start .panel -->
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fa-list"></i> 任务</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="todo-widget">
-                                        <div class="todo-header">
-                                            <div class="todo-search">
-                                                <form>
-                                                    <input type="text" class="form-control" name="search" placeholder="搜索">
-                                                </form>
-                                            </div>
-                                            <div class="todo-add">
-                                                <a href="#" class="btn btn-primary tip" title="Add new todo"><i class="im-plus"></i></a>
-                                            </div>
-                                        </div>
-                                        <h4 class="todo-period">已完成任务</h4>
-                                        <ul class="todo-list" id="today">
-                                            <li class="todo-task-item">
-                                            	 <div class="todo-priority tip">
-                                                    <i class="im-radio-checked"></i>
-                                                </div>
-                                                <div class="todo-task-text">第一次</div>
-                                                <button type="button" class="close todo-close">&times;</button>
-                                            </li>
-                                            <li class="todo-task-item">
-                                            	 <div class="todo-priority tip">
-                                                    <i class="im-radio-checked"></i>
-                                                </div>
-                                                <div class="todo-task-text">第二次</div>
-                                                <button type="button" class="close todo-close">&times;</button>
-                                            </li>
-                                        </ul>
-                                        <h4 class="todo-period">未完成任务</h4>
-                                        <ul class="todo-list" id="tomorrow">
-                                            <li class="todo-task-item">
-                                                <div class="todo-priority tip">
-                                                    <i class="im-radio-checked"></i>
-                                                </div>
-                                                <div class="todo-task-text">第三章测试</div>
-                                                <button type="button" class="close todo-close">&times;</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End .panel -->
-                        </div>
-                        <!-- End col-lg-6 -->
                     </div>
-                    <!-- End .row -->
-                    <!-- Page End here -->
+                    <!--填空题-->
+                    <div class="panel panel-default toggle">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">填空题</h3>
+                        </div>
+                        <div class="panel-body">
+                        	<div class="panel panel-default toggle">
+                                <div class="panel-heading" style="background-color: #0088CC;">
+                                    <h3 class="panel-title" style="color: white;">1</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label">题目</label>
+                                            <div class="col-lg-10 col-md-10">
+                                                <input class="form-control" id="mask-phone" type="text">
+                                                <span class="help-block">请输入填空题问题，一个括号一个答案</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label"><input type="hidden"></label>
+                                            <div class="col-lg-10 col-md-10">
+                                                <input class="form-control" id="mask-phoneExt" type="text">
+                                                 <span class="help-block">答案与答案之间用逗号隔开</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label"></label>
+                                    <div class="col-lg-10 col-md-10 text-center">
+                                        <a href="#" class="btn btn-primary tip" title="添加题目"><i class="im-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--应用题-->
+                    <div class="panel panel-default toggle">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">应用题</h3>
+                        </div>
+                        <div class="panel-body">
+                        	<div class="panel panel-default toggle">
+                                <div class="panel-heading" style="background-color: #0088CC;">
+                                    <h3 class="panel-title" style="color: white;">1</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label">题目</label>
+                                            <div class="col-lg-10 col-md-10">
+                                                <input class="form-control" id="mask-phone" type="text">
+                                                <span class="help-block"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label"><input type="hidden"></label>
+                                            <div class="col-lg-10 col-md-10">
+                                                <input class="form-control" id="mask-phoneExt" type="text">
+                                                <span class="help-block">应用题答案仅次于用于作业布置方面，以保证正确性</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label"></label>
+                                    <div class="col-lg-10 col-md-10 text-center">
+                                        <a href="#" class="btn btn-primary tip" title="添加题目"><i class="im-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- End .outlet -->
             </div>
